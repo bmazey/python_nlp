@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from flask import Flask, Blueprint
-from api.restplus import api
-from api.controllers import ns as sentence_namespace
+from restplus import api
+from controllers import ns as sentence_namespace
 
 application = Flask(__name__)
 
