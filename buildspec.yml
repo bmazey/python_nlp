@@ -4,6 +4,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Python code...
+      - sudo yum install gcc-c++
       - pip install -r requirements.txt
       # - python application.py
   post_build:
