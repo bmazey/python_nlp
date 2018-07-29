@@ -1,4 +1,4 @@
-from restplus import api
+from api.restplus import api
 from flask_restplus import fields
 
 sentence = api.model('sentence', {
