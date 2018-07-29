@@ -1,8 +1,10 @@
 #!/usr/bin/env python
+import sys
 from flask import Flask, Blueprint
 from api.restplus import api
 from api.controllers import ns as sentence_namespace
 
+sys.path.insert(0, "/api")
 application = Flask(__name__)
 
 
@@ -23,3 +25,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    print(sys.path)
