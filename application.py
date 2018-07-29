@@ -2,6 +2,7 @@
 import sys
 sys.path.insert(0, "/api")
 
+# ignore pep complaints
 from flask import Flask, Blueprint
 from api.restplus import api
 from api.controllers import ns as sentence_namespace
