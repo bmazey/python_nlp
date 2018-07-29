@@ -1,8 +1,17 @@
-from flask import Flask
+from api.restplus import api
+from flask_restplus import Resource
 
-application = Flask(__name__)
+
+ns = api.namespace('sentence', description='NLP on English sentences')
 
 
-@application.route('/api', methods=['GET'])
-def hello():
-    return "<p>Hello!</p>"
+@ns.route('/')
+class RumorCollection(Resource):
+
+    # @api.expect(pagination_arguments)
+    # @api.marshal_with(sentences)
+    def get(self):
+        """
+        Returns list of blog posts.
+        """
+        return 'Hello NLP!'
