@@ -1,11 +1,11 @@
 #!/usr/bin/env python
-import sys
-sys.path.insert(0, "/api")
+# import sys
+# sys.path.insert(0, "/api")
 
 # ignore pep complaints
 from flask import Flask, Blueprint
-from api.restplus import api
-from api.controllers import ns as sentence_namespace
+from .restplus import api
+from .controllers import ns as sentence_namespace
 
 
 application = Flask(__name__)
@@ -28,4 +28,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-    print(sys.path)
+    # print(sys.path)
