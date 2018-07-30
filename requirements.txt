@@ -1,5 +1,1 @@
-sqlalchemy
 flask
-flask-restplus
-Flask-SQLAlchemy
-nltk
