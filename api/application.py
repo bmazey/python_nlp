@@ -4,8 +4,8 @@
 
 # ignore pep complaints
 from flask import Flask, Blueprint
-from .restplus import api
-from .controllers import ns as sentence_namespace
+from api.restplus import api
+from api.controllers import ns as sentence_namespace
 
 
 application = Flask(__name__)
@@ -18,6 +18,7 @@ def initialize_app(flask_app):
     flask_app.register_blueprint(blueprint)
 
     # db.init_app(flask_app)
+    # test
 
 
 def main():
